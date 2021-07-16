@@ -1,30 +1,473 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Football</title>
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="./assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css">
+
+    <!-- magnific lightbox -->
+    <link rel="stylesheet" href="./assets/css/magnific-popup.css">
+
+
     <!-- fontawesome -->
     <link rel="stylesheet" href="./assets/css/all.min.css">
     <link rel="stylesheet" href="./assets/css/fontawesome.min.css">
     <!-- main css -->
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
+
 <body>
-        <footer>
-            <div class="logo">
-                <img src="./assets/images/Logo.png" alt="">
+    <header>
+        <nav>
+            <div class="container d-flex space-between align-items-center">
+
+                <div class="main-menu">
+                    <ul class="menu-item d-flex">
+                        <li>
+                            <a href="#home">Home</a>
+                        </li>
+                        <li>
+                            <a href="#home">Clubs</a>
+                        </li>
+                        <li>
+                            <a href="#home">World Cup 2023</a>
+                        </li>
+                        <li>
+                            <a href="#home">Upcoming Matches</a>
+                        </li>
+                        <li>
+                            <a href="#home">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- mobile-menu -->
+               <!-- mobile menu -->
+               <div class="mobile-menu">
+                <span onclick="openNav()">&#9776;</span>
+                <div id="myNav" class="overlay">
+                    <a href="javascript:void()" onclick="closeNav()" class="closeBtn">&times;</a>
+                    <div class="overlay-content">
+
+                        <a  class=" current" onclick="closeNav()" href="#home">home</a>
+
+                        <a onclick="closeNav()" href="#about">About</a>
+
+                        <a onclick="closeNav()" href="#service">Services</a>
+
+                        <a onclick="closeNav()" href="#client">Client</a>
+
+                        <a onclick="closeNav()" href="#work">Portfolio</a>
+
+                        <a onclick="closeNav()" href="#blog">Blog</a>
+
+                        <a onclick="closeNav()" href="#contact">Contact</a>
+
+
+                    </div>
+
+                </div>
             </div>
-            <div class="social-icon">
-                <span><a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a></span>
-                <span><a href="#"><i class="fab fa-dribbble" aria-hidden="true"></i></a></span>
-                <span><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></span>
-                <span><a href="#"><i class="fab fa-youtube" aria-hidden="true"></i></a></span>
+
+            <!-- login menu -->
+                <div class="right">
+                    <button> <span> <i class="fa fa-arrow-right" aria-hidden="true"></i> </span> Login</button>
+                </div>
             </div>
-            <div class="copyright">
-                <p>Coppyright &copy; 2022 Football</p>
+        </nav>
+    </header>
+    <!-- hero-section  -->
+    <div class="hero-section">
+        <div class="container">
+            <div class="hero-content d-flex justify-center align-items-center p-3">
+                <div class="hero-info">
+                    <h1>Conmebol Copa America 2021</h1>
+                    <button class="watch-now">Watch Live <span> <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                        </span></button>
+                </div>
+                <div class="hero-image">
+                    <img src="./assets/images/banner.png" alt="">
+                </div>
             </div>
-        </footer>
+        </div>
+    </div>
+
+    <!-- player section -->
+    <section id="player">
+        <div class="container">
+            <div class="player-wrapper">
+                <div class="single-player">
+                    <div class="player-image">
+                        <img src="./assets/images/players/player-1.png" alt="">
+                    </div>
+                    <div class="player-info">
+                        <h2>Neymar Jr</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta odit, voluptatem officia
+                            nemo itaque esse vel fuga. Perspiciatis, eaque officia.</p>
+                    </div>
+
+                </div>
+                <div class="single-player">
+                    <div class="player-image">
+                        <img src="./assets/images/players/player-2.png" alt="">
+                    </div>
+                    <div class="player-info">
+                        <h2>Lionel Messi</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta odit, voluptatem officia
+                            nemo itaque esse vel fuga. Perspiciatis, eaque officia.</p>
+                    </div>
+
+                </div>
+                <div class="single-player">
+                    <div class="player-image">
+                        <img src="./assets/images/players/player-3.png" alt="">
+                    </div>
+                    <div class="player-info">
+                        <h2>Cristiano Ronaldo</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta odit, voluptatem officia
+                            nemo itaque esse vel fuga. Perspiciatis, eaque officia.</p>
+                    </div>
+
+                </div>
+                <div class="single-player">
+                    <div class="player-image">
+                        <img src="./assets/images/players/player-4.png" alt="">
+                    </div>
+                    <div class="player-info">
+                        <h2>Paulo Dybala</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta odit, voluptatem officia
+                            nemo itaque esse vel fuga. Perspiciatis, eaque officia.</p>
+                    </div>
+
+                </div>
+
+                <div class="single-player">
+                    <div class="player-image">
+                        <img src="./assets/images/players/player-5.png" alt="">
+                    </div>
+                    <div class="player-info">
+                        <h2>Mesut Ozil </h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta odit, voluptatem officia
+                            nemo itaque esse vel fuga. Perspiciatis, eaque officia.</p>
+                    </div>
+
+                </div>
+                <div class="single-player">
+                    <div class="player-image">
+                        <img src="./assets/images/players/player-6.png" alt="">
+                    </div>
+                    <div class="player-info">
+                        <h2>Mauro Icardi </h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta odit, voluptatem officia
+                            nemo itaque esse vel fuga. Perspiciatis, eaque officia.</p>
+                    </div>
+
+                </div>
+                <div class="single-player">
+                    <div class="player-image">
+                        <img src="./assets/images/players/player-7.png" alt="">
+                    </div>
+                    <div class="player-info">
+                        <h2>Di Maria</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta odit, voluptatem officia
+                            nemo itaque esse vel fuga. Perspiciatis, eaque officia.</p>
+                    </div>
+
+                </div>
+                <div class="single-player">
+                    <div class="player-image">
+                        <img src="./assets/images/players/player-8.png" alt="">
+                    </div>
+                    <div class="player-info">
+                        <h2>Kylian Mbappé</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta odit, voluptatem officia
+                            nemo itaque esse vel fuga. Perspiciatis, eaque officia.</p>
+                    </div>
+
+                </div>
+                <div class="single-player">
+                    <div class="player-image">
+                        <img src="./assets/images/players/player-9.png" alt="">
+                    </div>
+                    <div class="player-info">
+                        <h2>Mohamed Salah</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta odit, voluptatem officia
+                            nemo itaque esse vel fuga. Perspiciatis, eaque officia.</p>
+                    </div>
+
+                </div>
+                <div class="single-player">
+                    <div class="player-image">
+                        <img src="./assets/images/players/player-10.png" alt="">
+                    </div>
+                    <div class="player-info">
+                        <h2>Harry Kane</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta odit, voluptatem officia
+                            nemo itaque esse vel fuga. Perspiciatis, eaque officia.</p>
+                    </div>
+
+                </div>
+                <div class="single-player">
+                    <div class="player-image">
+                        <img src="./assets/images/players/player-11.png" alt="">
+                    </div>
+                    <div class="player-info">
+                        <h2>Kevin De Bruyne</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta odit, voluptatem officia
+                            nemo itaque esse vel fuga. Perspiciatis, eaque officia.</p>
+                    </div>
+
+                </div>
+                <div class="single-player">
+                    <div class="player-image">
+                        <img src="./assets/images/players/player-12.png" alt="">
+                    </div>
+                    <div class="player-info">
+                        <h2>Philippe Coutinho</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta odit, voluptatem officia
+                            nemo itaque esse vel fuga. Perspiciatis, eaque officia.</p>
+                    </div>
+
+                </div>
+            </div>
+            <button class="load-more">Load More</button>
+        </div>
+    </section>
+
+    <!-- highlight section -->
+    <section id="highlights">
+        <div class="container">
+            <h2>Hightlights</h2>
+            <div class="highlight-wrapper owl-carousel owl-theme">
+                <div class="single-wrapper">
+                    <img src="./assets/images/highlights/1.jpg" alt="">
+                    <div class="highlight-content">
+                        <p>Goalkepper of the tournament</p>
+                        <h4>2021-07-14</h4>
+                        <h2>The rapid rise of Argentina's new goalkeeping hero Emiliano Martinez</h2>
+    
+                    </div>
+                </div>
+                <div class="single-wrapper">
+                    <img src="./assets/images/highlights/2.jpg" alt="">
+                    <div class="highlight-content">
+                        <p>Analysis of the Team of the Tournament</p>
+                        <h4>2021-07-13</h4>
+                        <h2>One by one, the team of the CONMEBOL Copa America chosen by GET</h2>
+    
+                    </div>
+                </div>
+                <div class="single-wrapper">
+                    <img src="./assets/images/highlights/3.jpg" alt="">
+                    <div class="highlight-content">
+                        <p>First final spot on the line</p>
+                        <h4>2021-07-05</h4>
+                        <h2>Brazil look to retain their title, Peru are out for revenge</h2>
+    
+                    </div>
+                </div>
+                <div class="single-wrapper">
+                    <img src="./assets/images/highlights/4.jpg" alt="">
+                    <div class="highlight-content">
+                        <p>One step from the final</p>
+                        <h4>2021-07-04</h4>
+                        <h2>Four teams battle for a place in the CONMEBOL Copa América 2021 final</h2>
+    
+                    </div>
+                </div>
+                <div class="single-wrapper">
+                    <img src="./assets/images/highlights/5.jpg" alt="">
+                    <div class="highlight-content">
+                        <p>Argentina and Brazil go for glory</p>
+                        <h4>2021-07-10</h4>
+                        <h2>A global South American superclasico to decide the 2021 champion</h2>
+    
+                    </div>
+                </div>
+                <div class="single-wrapper">
+                    <img src="./assets/images/highlights/6.jpg" alt="">
+                    <div class="highlight-content">
+                        <p>Brazilian defensive leader</p>
+                        <h4>2021-07-01</h4>
+                        <h2>Thiago Silva, a warrior in search of his second CONMEBOL Copa América</h2>
+    
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <!-- gallery -->
+    <section id="gallery">
+            <div class="gallery">
+                <h2 class="sub-heading">Gallery</h2>
+                <div class="gallery-wrapper">
+                    <div class="gallery-single-image">
+                        <a href="./assets/images/gallery/1.png" class="image">
+                            <img src="./assets/images/gallery/1.png" alt="">
+                        </a>
+                    </div>
+                    <div class="gallery-single-image">
+                        <a href="./assets/images/gallery/2.jpg" class="image">
+                            <img src="./assets/images/gallery/2.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="gallery-single-image">
+                        <a href="./assets/images/gallery/3.jpg" class="image">
+                            <img src="./assets/images/gallery/3.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="gallery-wrapper-2">
+                    <div class="gallery-single-image">
+                        <a href="./assets/images/gallery/4.jpg" class="image">
+                            <img src="./assets/images/gallery/4.jpg" alt="">
+                        </a>
+                        
+                    </div>
+                    <div class="gallery-single-image">
+                        <a href="./assets/images/gallery/5.jpg" class="image">
+                            <img src="./assets/images/gallery/5.jpg" alt="">
+                        </a>
+                        
+                    </div>
+                    <div class="gallery-single-image">
+                        <a href="./assets/images/gallery/6.jpg" class="image">
+                            <img src="./assets/images/gallery/6.jpg" alt="">
+                        </a>
+                        
+                    </div>
+                    <div class="gallery-single-image">
+                        <a href="./assets/images/gallery/7.jpg" class="image">
+                            <img src="./assets/images/gallery/7.jpg" alt="">
+                        </a>
+                        
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- videos section -->
+    <section id="videos">
+        <h2 class="sub-heading">Videos</h2>
+        <div class="video-wrapper owl-carousel owl-theme">
+            <div class="single-video-wrapper">
+                <a href="https://www.youtube.com/watch?v=Rr78gDMBWC8&ab_channel=CopaAm%C3%A9rica" class="video">
+                    <div class="image-box-1 image-box">
+                        <div class="video-des">
+                            <h2>highlights brasil 1- 0 chile | copa america 2021 | 02-07-21</h2>
+                            <h6>02/07/2021</h6>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="single-video-wrapper">
+                <a href="https://www.youtube.com/watch?v=Rr78gDMBWC8&ab_channel=CopaAm%C3%A9rica" class="video">
+                    <div class="image-box-2 image-box">
+                        <div class="video-des">
+                            <h2>highlights brasil 1- 0 chile | copa america 2021 | 02-07-21</h2>
+                            <h6>02/07/2021</h6>
+                        </div>
+                    </div>
+                </a>
+                
+            </div>
+            <div class="single-video-wrapper">
+                <a href="https://www.youtube.com/watch?v=Rr78gDMBWC8&ab_channel=CopaAm%C3%A9rica" class="video">
+                    <div class="image-box-3 image-box">
+                        <div class="video-des">
+                            <h2>highlights brasil 1- 0 chile | copa america 2021 | 02-07-21</h2>
+                            <h6>02/07/2021</h6>
+                        </div>
+                    </div>
+                </a>
+                
+            </div>
+            <div class="single-video-wrapper">
+                <a href="https://www.youtube.com/watch?v=Rr78gDMBWC8&ab_channel=CopaAm%C3%A9rica" class="video">
+                    <div class="image-box-4 image-box">
+                        <div class="video-des">
+                            <h2>highlights brasil 1- 0 chile | copa america 2021 | 02-07-21</h2>
+                            <h6>02/07/2021</h6>
+                        </div>
+                    </div>
+                </a>
+                
+            </div>
+            <div class="single-video-wrapper">
+                <a href="https://www.youtube.com/watch?v=Rr78gDMBWC8&ab_channel=CopaAm%C3%A9rica" class="video">
+                    <div class="image-box-5 image-box">
+                        <div class="video-des">
+                            <h2>highlights brasil 1- 0 chile | copa america 2021 | 02-07-21</h2>
+                            <h6>02/07/2021</h6>
+                        </div>
+                    </div>
+                </a>
+                
+            </div>
+            <div class="single-video-wrapper">
+                <a href="https://www.youtube.com/watch?v=Rr78gDMBWC8&ab_channel=CopaAm%C3%A9rica" class="video">
+                    <div class="image-box-6 image-box">
+                        <div class="video-des">
+                            <h2>highlights brasil 1- 0 chile | copa america 2021 | 02-07-21</h2>
+                            <h6>02/07/2021</h6>
+                        </div>
+                    </div>
+                
+                </a>
+                
+            </div>
+            <div class="single-video-wrapper">
+                <a href="https://www.youtube.com/watch?v=Rr78gDMBWC8&ab_channel=CopaAm%C3%A9rica" class="video">
+                    <div class="image-box-7 image-box">
+                        <div class="video-des">
+                            <h2>highlights brasil 1- 0 chile | copa america 2021 | 02-07-21</h2>
+                            <h6>02/07/2021</h6>
+                        </div>
+                    </div>
+                </a>
+                
+            </div>
+        </div>
+    </section>
+    <!-- our sponsor -->
+    <section id="sponsor">
+        <h2>Our Sponsor</h2>
+        <div class="sponsor-wrapper">
+            <div class="sponsor-image">
+                <img src="" alt="">
+            </div>
+        </div>
+    </section>
+
+ <footer>
+        <div class="logo">
+            <img src="./assets/images/Logo.png" alt="">
+        </div>
+        <div class="social-icon">
+            <span><a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a></span>
+            <span><a href="#"><i class="fab fa-dribbble" aria-hidden="true"></i></a></span>
+            <span><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></span>
+            <span><a href="#"><i class="fab fa-youtube" aria-hidden="true"></i></a></span>
+        </div>
+        <div class="copyright">
+            <p>Coppyright &copy; 2022 Football</p>
+        </div>
+    </footer>
+
+
+
+<!-- js link -->
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="./assets/js/owl.carousel.min.js"></script>
+<script src="./assets/js/jquery.magnific-popup.js"></script>
+<script src="./assets/js/main.js"></script>
 </body>
+
 </html>
