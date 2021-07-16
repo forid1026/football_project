@@ -73,6 +73,7 @@ nav .right button {
     padding: .2rem 1rem;
     background-color: #E02C6D;
     border: none;
+    cursor: pointer;
 }
 
 nav .right button span i {
@@ -149,8 +150,8 @@ nav .right button span i {
     border: none;
     padding: .5rem 1rem;
     color: #fff;
+    cursor: pointer;
 }
-
 .hero-section .hero-content img {
     width: 580px;
     padding: 5rem 0;
