@@ -347,27 +347,29 @@ nav .right button span i {
     width: 100%;
 
 }
-#videos .video-wrapper .single-video-wrapper .image-box-6{
-    background: url('../images/videos/4.jpg');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 500px;
-    width: 100%;
-
-}
-
 #videos .video-wrapper .single-video-wrapper .image-box-5{
-    background: url('../images/videos/4.jpg');
+    background: url('../images/videos/5.png');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 500px;
     width: 100%;
 }
+
+
+#videos .video-wrapper .single-video-wrapper .image-box-6{
+    background: url('../images/videos/6.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    width: 100%;
+
+}
+
 
 #videos .video-wrapper .single-video-wrapper .image-box-7{
-    background: url('../images/videos/4.jpg');
+    background: url('../images/videos/7.jpg');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -410,39 +412,16 @@ nav .right button span i {
 }
 
 
+/* sponsor */
+#sponsor h2{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    margin-left: 3rem;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#sponsor .sponsor-wrapper{
+     background-color: #969BAB;
+}
 
 
 

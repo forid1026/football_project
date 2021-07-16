@@ -67,6 +67,15 @@ $(document).ready(function(){
     $('.video').magnificPopup({
         type:'iframe'
     });
+
+    // sponsor 
+    $('.sponsor-wrapper').owlCarousel({
+        margin: 20,
+        loop: true,
+        dots: false,
+        autoplay: true,
+        items: 4
+    });
 });
 
 function openNav(){
