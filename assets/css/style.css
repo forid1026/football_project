@@ -156,7 +156,10 @@ nav .right button span i {
     width: 580px;
     padding: 5rem 0;
 }
-
+.hero-section .hero-content img:hover{
+    transform: scale(1.1) rotate(5deg);
+    transition: transform 2s ease-in-out;
+}
 /* player section */
 
 #player .player-wrapper {
