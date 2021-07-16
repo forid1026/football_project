@@ -1,4 +1,5 @@
 $(document).ready(function(){
+
     $('.highlight-wrapper').owlCarousel({
         margin: 15,
         loop: true,
@@ -64,6 +65,7 @@ $(document).ready(function(){
           }
           
     });
+    
     $('.video').magnificPopup({
         type:'iframe'
     });
